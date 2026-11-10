@@ -1,15 +1,15 @@
-# Swish Data Genie: a self-serve win-back list builder for Growth Marketing
+# Dabba Dash Data Genie: a self-serve win-back list builder for Growth Marketing
 
-**Live demo:** https://sunit-majumdar.github.io/swish-data-genie/
-**Related project:** [Swish growth analytics dashboard](https://github.com/sunit-majumdar/swish-growth-analytics)
+**Live demo:** https://sunit-majumdar.github.io/dabba-dash-data-genie/
+**Related project:** [Dabba Dash growth analytics dashboard](https://github.com/sunit-majumdar/dabba-dash-growth-analytics)
 
 > **Headline:** 85% of Bengaluru's Paid Social customers (914 of 1,079) have stopped ordering, the most of any Bengaluru channel. This page lets a marketer pull that win-back list in seconds, without writing SQL.
 
-![Swish Data Genie showing Bengaluru, Paid Social, Lapsed = 914 customers](genie-bengaluru-lapsed.png)
+![Dabba Dash Data Genie showing Bengaluru, Paid Social, Lapsed = 914 customers](genie-bengaluru-lapsed.png)
 
 ## The business problem
 
-Swish is a Bengaluru-based 10-minute food delivery company that is expanding into new cities. Growth and Marketing want to win back customers who stopped ordering. Today, every customer list means asking an analyst to write a query.
+Dabba Dash is a fictional Bengaluru-based 10-minute food delivery company that is expanding into new cities. Growth and Marketing want to win back customers who stopped ordering. Today, every customer list means asking an analyst to write a query.
 
 The question this tool answers: **which customers should Marketing message, and how many are there?**
 
@@ -42,12 +42,12 @@ Of the 914 customers who stopped ordering:
 
 | Action | Who | Expected result | How to measure |
 |---|---|---|---|
-| Message the 123 recent, regular customers. Leave a random 1 in 5 unmessaged, to compare against. | CRM / Growth Marketing | Not known yet. This data has no customers who ever come back, so the test is how Swish would find out. | Share of customers who order again within 30 days: messaged vs unmessaged |
+| Message the 123 recent, regular customers. Leave a random 1 in 5 unmessaged, to compare against. | CRM / Growth Marketing | Not known yet. This data has no customers who ever come back, so the test is how Dabba Dash would find out. | Share of customers who order again within 30 days: messaged vs unmessaged |
 | Check how Paid Social customers in Bengaluru are targeted before spending more on it. | Growth Marketing | Fewer customers going quiet. Today the figure is 85%, against 73% to 81% for the other channels. | Share who order again in the month after joining, by campaign, for new sign-ups |
 
 ## Limits
 
-- **Synthetic data.** Made up to resemble Swish's publicly known business. No real Swish figures are used, and this project is not affiliated with or endorsed by Swish.
+- **Synthetic data.** Dabba Dash is a fictional company, and every figure is generated. The data is modeled on the shape of a Bengaluru quick-commerce business. No real company's figures are used, and this project is not affiliated with any company.
 - **Frozen data.** It ends 15 Sep 2026. The app never connects to BigQuery.
 - **No win-back in the data.** In this synthetic data, a customer who stops ordering never starts again. So it cannot say how many stopped customers would respond to a message. That is why the first recommendation is a test.
 - **Statuses describe customers, not single orders.** "No delivered order" means the customer has no completed delivery. It includes customers whose orders were all cancelled or refunded, and the data does not separate them from customers who never ordered.

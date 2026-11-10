@@ -126,7 +126,7 @@ LIMIT :lim`;
     const blob = new Blob([text], { type: 'text/csv;charset=utf-8' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'swish_customers.csv';
+    a.download = 'dabba_dash_customers.csv';
     document.body.appendChild(a);
     a.click();
     a.remove();
